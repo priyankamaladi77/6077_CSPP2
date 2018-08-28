@@ -1,4 +1,7 @@
 import java.util.Scanner;
+/**
+ * Class for solution.
+ */
 public class Solution {
 	/**
 	Do not modify this main function.
@@ -10,11 +13,9 @@ public class Solution {
 		int b = scan.nextInt();
 		int c = scan.nextInt();
 		roots(a, b, c);
-	
 	}
 	/**
 	Need to write the roots function and print the output.
-	
 	@param      a     { parameter_description }
 	@param      b     { parameter_description }
 	@param      c     { parameter_description }
