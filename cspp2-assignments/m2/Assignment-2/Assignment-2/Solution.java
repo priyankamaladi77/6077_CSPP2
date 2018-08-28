@@ -9,13 +9,17 @@ public class Solution {
 		int a = scan.nextInt();
 		int b = scan.nextInt();
 		int c = scan.nextInt();
-		rootsOfQuadraticEquation(a, b, c);
-		
+		roots(a, b, c);
+	
 	}
-	/*
-	Need to write the rootsOfQuadraticEquation function and print the output.
+	/**
+	Need to write the roots function and print the output.
+	
+	@param      a     { parameter_description }
+	@param      b     { parameter_description }
+	@param      c     { parameter_description }
 	*/
-	public static void rootsOfQuadraticEquation(final int a, final int b, final int c) {
+	public static void roots(final int a, final int b, final int c) {
 		int d = (b * b) - (2 * 2 * a * c);
 		double r1 = ((-b) + Math.sqrt(d)) / (2 * a);
 		double r2 = ((-b) - Math.sqrt(d)) / (2 * a);
