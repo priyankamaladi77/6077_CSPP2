@@ -2,11 +2,18 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
 	/**
 	Do not modify this main function.
 	@param args The arguments
 	*/
+	private Solution() {
+        // I am not using this constructor
+    }
+    /**
+     * main function to find the roots of quadratic equation.
+     * @param args is the parameter for this function
+     */
 	public static void main(final String[] args) {
 		Scanner scan = new Scanner(System.in);
 		int a = scan.nextInt();
