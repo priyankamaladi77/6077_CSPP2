@@ -3,8 +3,14 @@ import java.util.Scanner;
     Do not modify this main function.
     */
 public class Solution {
+     /**
+    Do not modify this main function.
+    */
+    private Solution() {
+        // I am not using this constructor
+    }
     /**
-     * { function_description.
+     * main function to print the gcd of given numbers.
      * @param args The arguments.
      */
     public static void main(final String[] args) {
