@@ -3,8 +3,11 @@ import java.util.Scanner;
     Do not modify this main function.
     */
 public class Solution {
-
-    public static void main(String[] args) {
+    /**
+     * { function_description 
+     * @param args The arguments
+     */
+    public static void main(final String[] args) {
 
         Scanner s = new Scanner(System.in);
         int n1 = s.nextInt();
@@ -12,8 +15,11 @@ public class Solution {
         int res = gcd(n1, n2);
         System.out.println(res);
     }
-    /*
+    /**
     Need to write the gcd function and print the output.
+    @param n1 The n 1
+    @param n2 The n 2
+    @return { description_of_the_return_value }
     */
     public static int gcd(final int n1, final int n2) {
         int gcd = 1;
