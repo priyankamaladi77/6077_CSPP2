@@ -1,12 +1,15 @@
 import java.util.Scanner;
 /**
- * @author PriyankaMaladi.
+ * @author     PriyankaMaladi.
  */
 public final class Solution {
     /**
     Do not modify this main function.
     */
     private static final int A = 10;
+    /**
+     * Constructs the object.
+     */
     private static final int B = 7;
     /**
      * Constructs the object.
