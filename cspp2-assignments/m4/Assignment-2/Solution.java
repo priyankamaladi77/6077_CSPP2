@@ -23,7 +23,7 @@ public final class Solution {
         int m = getRowSize(mat1), n = getColumnSize(mat1);
         int a = getRowSize(mat2), b = getColumnSize(mat2);
         if ((m != a) || (n != b)) {
-        	System.out.println("matrices are diffrent in size");
+        	System.out.println("not possible");
         } else {
         	printMatrix(getAdd(mat1, mat2, createMatrix(m, n)));
         }
