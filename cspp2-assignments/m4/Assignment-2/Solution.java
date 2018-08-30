@@ -7,7 +7,7 @@ public final class Solution {
      * Constructs the object.
      */
     private Solution() {
-    	//Empty Constructor.
+        //Empty Constructor.
         // I am not using this constructor.
     }
     /**
@@ -15,50 +15,50 @@ public final class Solution {
      * main function to add matrices of same size.
      * @param args is the parameter for this function.
      */
-	public static void main(final String[] args) {
-		Scanner sc = new Scanner(System.in);
+    public static void main(final String[] args) {
+        Scanner sc = new Scanner(System.in);
         int[][] mat1 = createMatrix(sc);
         int[][] mat2 = createMatrix(sc);
         sc.close();
         int m = getRowSize(mat1), n = getColumnSize(mat1);
         int a = getRowSize(mat2), b = getColumnSize(mat2);
         if ((m != a) || (n != b)) {
-        	System.out.println("not possible");
+            System.out.println("not possible");
         } else {
-        	printMatrix(getAdd(mat1, mat2, createMatrix(m, n)));
+            printMatrix(getAdd(mat1, mat2, createMatrix(m, n)));
         }
-	}
-	/**
+    }
+    /**
      * { function_description }.
      *
-     * @param addMatrix The sum matrix
+     * @param addmat The sum matrix
      */
-	public static void printMatrix(final int[][] addMatrix) {
-		for (int i = 0; i < getRowSize(addMatrix); i++) {
-			for (int j = 0; j < getColumnSize(addMatrix) - 1; j++) {
-				System.out.println(addMatrix[i][j] + " ");
-			}
-			System.out.print(addMatrix[i][getRowSize(addMatrix) - 1]);
-		}
-	}
-	/**
+    public static void printMatrix(final int[][] addmat) {
+        for (int i = 0; i < getRowSize(addmat); i++) {
+            for (int j = 0; j < getColumnSize(addmat) - 1; j++) {
+                System.out.println(addmat[i][j] + " ");
+            }
+            System.out.print(addmat[i][getRowSize(addmat) - 1]);
+        }
+    }
+    /**
      * Gets the add.
      * @param mat1 The matrix 1
      * @param mat2 The matrix 2
-     * @param addMatrix The sum matrix
+     * @param addmat The sum matrix
      * @return The add.
      */
-	public static int[][] getAdd(final int[][] mat1,
+    public static int[][] getAdd(final int[][] mat1,
                                 final int[][] mat2,
-                                final int[][] addMatrix) {
-		for (int i = 0; i < getRowSize(mat1); i++) {
-			for (int j = 0; j < getColumnSize(mat1); j++) {
-                addMatrix[i][j] = mat1[i][j] + mat2[i][j];
-			}
-		}
-		return addMatrix;
-	}
-	/**
+                                final int[][] addmat) {
+        for (int i = 0; i < getRowSize(mat1); i++) {
+            for (int j = 0; j < getColumnSize(mat1); j++) {
+                addmat[i][j] = mat1[i][j] + mat2[i][j];
+            }
+        }
+        return addmat;
+    }
+    /**
      * { function_description }.
      * @param sc The scanner object
      * @return { description_of_the_return_value }
@@ -100,7 +100,7 @@ public final class Solution {
     /**
      * Gets the column size.
      *
-     * @param      array  The array
+     * @param      arrays  The array
      *
      * @return     The column size.
      */
