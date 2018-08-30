@@ -38,7 +38,7 @@ public final class Solution {
             for (int j = 0; j < getColumnSize(addmat) - 1; j++) {
                 System.out.println(addmat[i][j] + " ");
             }
-            System.out.print(addmat[i][getRowSize(addmat) - 1]);
+            System.out.println(addmat[i][getRowSize(addmat) - 1]);
         }
     }
     /**
