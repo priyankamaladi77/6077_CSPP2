@@ -36,7 +36,7 @@ public final class Solution {
     public static void printMatrix(final int[][] addmat) {
         for (int i = 0; i < getRowSize(addmat); i++) {
             for (int j = 0; j < getColumnSize(addmat) - 1; j++) {
-                System.out.println(addmat[i][j] + " ");
+                System.out.print(addmat[i][j] + " ");
             }
             System.out.println(addmat[i][getRowSize(addmat) - 1]);
         }
