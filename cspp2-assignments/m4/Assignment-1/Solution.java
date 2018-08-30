@@ -11,8 +11,9 @@ public class Solution
 		int[] arrays = new int[num];
 		for (int i = 0; i < num; i++) {
 			arrays[i] = sc.nextInt();
-			if (arrays[i] > max);
-			max = arrays[i];	
+			if (arrays[i] > max){
+				max = arrays[i];	
+			}
 		}
 		System.out.println(max);
 	}
