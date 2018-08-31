@@ -10,7 +10,7 @@ public final class Concatinate {
         // I am not using this constructor
     }
     /**
-     * main function to find the average of given elements in array.
+     * main function to concatinate the string with Hello.
      * @param args is the parameter for this function
      */
     public static void main(final String[] args) {
