@@ -2,7 +2,6 @@ import java.util.Scanner;
 /**
  * @author PriyankaMaladi.
  */
-import java.util.Scanner;
 public final class Solution {
     /**
      * Do not modify the main function.
