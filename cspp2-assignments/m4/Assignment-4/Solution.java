@@ -1,15 +1,19 @@
+import java.util.Scanner;
 /**
  * @author PriyankaMaladi.
  */
 import java.util.Scanner;
-public class Solution {
+public final class Solution {
     /**
-     * Do not modify the main function
-     * @param args The arguments
+     * Do not modify the main function.
     */
     private Solution() {
-        // I am not using this constructor
+        // I am not using this constructor.
     }
+    /**
+     * main function to print reverse of the given string.
+     * @param args is the parameter for this function
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String actual = sc.nextLine();
