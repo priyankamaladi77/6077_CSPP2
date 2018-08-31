@@ -18,27 +18,27 @@ public final class Solution {
      */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        for (int i = 0; i < n; i++) {
-            String s = sc.next();
-            long res = binaryToDecimal(s);
+        int num = sc.nextInt();
+        for (int i = 0; i < num; i++) {
+            String actual = sc.next();
+            long res = binaryToDecimal(actual);
             System.out.println(res);
         }
     }
     /**
      * { function_description }.
-     * @param s { parameter_description }.
+     * @param actual { parameter_description }.
      * @return { description_of_the_return_value }.
      */
-    public static long binaryToDecimal(final String s) {
-        double result;
+    public static long binaryToDecimal(final String actual) {
+        double ans;
         int sum = 0;
         int base = 2;
-        int j = s.length() - 1;
-        for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '1') {
-            result = Math.pow(2, j);
-            sum += result;
+        int j = actual.length() - 1;
+        for (int i = 0; i < actual.length(); i++) {
+            if (actual.charAt(i) == '1') {
+            ans = Math.pow(2, j);
+            sum += ans;
             }
             j = j - 1;
         }
