@@ -3,8 +3,8 @@ import java.util.Scanner;
  * @author     : priyanka maladi
  */
 class InputValidator {
-    /*
-     * Write the atrributes and methods for InputValidator
+    /**
+     * Write the atrributes and methods for InputValidator.
      */
     private String input;
     /**
@@ -38,6 +38,9 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
+    public Solution() {
+        
+    }
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         String input = s.next();
