@@ -35,6 +35,8 @@ class InputValidator {
 public final class Solution {
     /**
      * { item_description }.
+     *
+     * @param      args  The arguments
      */
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
