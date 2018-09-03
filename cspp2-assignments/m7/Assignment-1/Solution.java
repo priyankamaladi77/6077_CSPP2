@@ -34,6 +34,9 @@ class InputValidator {
  */
 public final class Solution {
     
+    /**
+     * Constructs the object.
+     */
     private Solution() {
 
     }
