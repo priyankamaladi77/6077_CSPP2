@@ -1,6 +1,8 @@
 import java.util.Scanner;
 /**
  * @author     : priyanka maladi
+ *
+ * Class for input validator.
  */
 class InputValidator {
     /**
@@ -37,11 +39,9 @@ public final class Solution {
      * Constructs the object.
      */
     private Solution() {
-
     }
-
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      args  The arguments
      */
