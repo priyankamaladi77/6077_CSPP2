@@ -38,6 +38,9 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
+    public Solution() {
+
+    }
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
         String input = s.next();
