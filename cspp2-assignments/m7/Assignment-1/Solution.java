@@ -34,9 +34,7 @@ class InputValidator {
  */
 public final class Solution {
     /**
-     * { item_description }.
-     *
-     * @param      args  The arguments
+     * Constructs the object.
      */
     public Solution() {
 
