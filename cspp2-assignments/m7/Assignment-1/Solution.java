@@ -38,8 +38,8 @@ public final class Solution {
      *
      * @param      args  The arguments
      */
-    public Solution() {
-        
+    private Solution() {
+
     }
     public static void main(final String[] args) {
         Scanner s = new Scanner(System.in);
