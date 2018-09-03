@@ -33,11 +33,7 @@ class InputValidator {
  * { item_description }.
  */
 public final class Solution {
-    /**
-     * { item_description }.
-     *
-     * @param      args  The arguments
-     */
+    
     private Solution() {
 
     }
