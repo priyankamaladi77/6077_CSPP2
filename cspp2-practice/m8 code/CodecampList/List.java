@@ -129,7 +129,7 @@ public class List {
         // Think about what to do to the size variable.
         // if (index >= 0 && index < size) {
             if (index >= 0 && index < size) {
-            for (int i = index; i < size; i++) {
+            for (int i = index; i < size - 1; i++) {
                 l[i] = l[i + 1];
             }
             size--;
@@ -177,9 +177,11 @@ public class List {
     public String toString() {
         // Replace the code below
         String s = "[";
-        for (int i = 0; i < size - 1; i++) {
-            s += l[i] + "]";
+        int i;
+        for (i = 0; i < size - 1; i++) {
+            s += l[i] + ",";
         }
+        s += l[i] + "]";
         return s;
     }
 
