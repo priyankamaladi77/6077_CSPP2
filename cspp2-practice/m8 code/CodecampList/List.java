@@ -62,6 +62,9 @@ public class List {
      * The purpose of the constructor is to initialize the class variables with
      * some default values.
      */
+    /**
+     * @variable TEN.
+     */
     private static final int TEN = 10;
     public List() {
 
