@@ -224,6 +224,17 @@ public class List {
         }
         return -1;
     }
+    /**public void addAll(int[] items) {
+
+    }
+    public void add(int index, int item) {
+
+    }
+
+    public int count(int item) {
+
+    }
+    */
 
     /**
      * { function_description }.
@@ -266,7 +277,10 @@ public class List {
                 System.out.println(l.indexOf(Integer.parseInt(tokens[1])));
                 break;
                 case "get":
+                int n = l.get(Integer.parseInt(tokens[1]));
+                if (n != -1) {
                 System.out.println(l.get(Integer.parseInt(tokens[1])));
+                }
                 break;
                 case "contains":
                 System.out.println(l.contains(Integer.parseInt(tokens[1])));
