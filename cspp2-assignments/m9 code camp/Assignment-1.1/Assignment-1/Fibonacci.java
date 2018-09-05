@@ -29,7 +29,7 @@ public class Fibonacci {
         // todo - complete this method
         int fib1 = 0, fib2 = 1;
         List lst1 = new List();
-        for (int i = 1; i<n; i++) {
+        for (int i = 1; i<= n; i++) {
             lst1.add(fib1);
             int temp = fib1 + fib2;
             fib1 = fib2;
