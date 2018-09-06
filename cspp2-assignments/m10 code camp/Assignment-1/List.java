@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class List {
-	//Implement all the methods mentioned to build a ListADT
+    //Implement all the methods mentioned to build a ListADT
 
     /*
      * The goal for the list is to store items.
@@ -286,7 +286,7 @@ public class List {
 
      /* 
         Inserts the specified element at the specified index 
-	by moving all the elements to the right.
+    by moving all the elements to the right.
         The method returns void (nothing)
      */
     public void add(final int index,final int item) {
@@ -319,7 +319,7 @@ public class List {
         list = Arrays.copyOf(list, list.length * 2);
     }
 
-	public static void main(final String[] args) {
+    public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         List l = new List();
 
@@ -334,13 +334,13 @@ public class List {
             // based on the list operation invoke the corresponding method
             switch (tokens[0]) {
                case "add":
-                if((tokens.length)==2){
+                if ((tokens.length) == 2) {
                 String[] t = tokens[1].split(",");
-                if(t.length==1){
+                if (t.length == 1) {
                     l.add(Integer.parseInt(tokens[1]));
                 }
                 else{
-                    if(t.length>1)
+                    if (t.length > 1)
                         l.add(Integer.parseInt(t[0]),Integer.parseInt(t[1]));
                     }
                 }
@@ -349,11 +349,11 @@ public class List {
                 System.out.println(l.count(Integer.parseInt(tokens[1])));
                 break;
                 case "addAll":
-                if(tokens.length==2){
+                if (tokens.length == 2) {
                 String[] t1 = tokens[1].split(",");
-                int temp[]=new int[t1.length];
-                for(int i=0;i<temp.length;i++)
-                    temp[i]=Integer.parseInt(t1[i]);
+                int temp[] = new int[t1.length];
+                for (int i = 0; i < temp.length; i++)  
+                    temp[i] = Integer.parseInt(t1[i]);
                 l.addAll(temp);
                 }
                 break;
@@ -384,5 +384,5 @@ public class List {
                 default:
             }
         }
-	}
+    }
 }
