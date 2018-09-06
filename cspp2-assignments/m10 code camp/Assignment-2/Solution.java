@@ -1,16 +1,25 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 
+/**
+ * Class for solution.
+ */
 public class Solution {
     /**
-     * { function_description }
+     * Empty constructor.
+     */
+    private Solution() {
+        // I am not using this constructor
+    }
+    /**
+     * { function_description }.
      *
      * @param      args  The arguments
      */
     public static void main(final String[] args) {
         // create an object of the list to invoke methods on it
         StringList sl = new StringList();
-        StringListInterface l = (StringListInterface)sl;
+        StringListInterface l = (StringListInterface) sl;
         //Typecast ing is done for StringListInterface
         // code to read the test cases input file
         Scanner stdin = new Scanner(new BufferedInputStream(System.in));
