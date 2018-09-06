@@ -70,7 +70,10 @@ public class List {
      * The purpose of the constructor is to initialize the
      * class variables with some default values.
      */
-
+    /**
+     * @variable TEN.
+     */
+    private static final int TEN = 10;
     /**
      * Constructs the object.
      */
@@ -289,7 +292,6 @@ public class List {
     }
    /**
     Inserts all the elements of specified int array to the end of list.
-   
     @param      items  The items
    */
     public void addAll(final int[] items) {
