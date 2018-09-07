@@ -1,5 +1,6 @@
 import java.io.BufferedInputStream;
 import java.util.Scanner;
+import java.util.Arrays;
 
 /**
  * List of Integer.
@@ -102,6 +103,12 @@ public class List {
         return size;
     }
 
+    /**
+     * { function_description }.
+     */
+    protected void resize() {
+        list = Arrays.copyOf(list, list.length * 2);
+    }
     /*
      * The remove method does what the name suggests. Removes an int item,
      * specified by the index argument, from the list It also does an additional
@@ -205,6 +212,9 @@ public class List {
     public void addAll(int[] newArray)
     {
         // write the logic
+        if (newArray.length + size > list.length) {
+            resize();
+        }
         for (int i = 0; i < newArray.length; i++) {
             add(newArray[i]);
         }
