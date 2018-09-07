@@ -222,7 +222,7 @@ public class List<E> {
      */
     public boolean contains(final E item) {
         // Replace the code below
-        return indexOf(item) == -1;
+        return indexOf(item) >= 0;
     }
     /**
      * Returns the index of the first occurrence of the specified element in.
