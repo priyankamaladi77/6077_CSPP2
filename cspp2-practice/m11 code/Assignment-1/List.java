@@ -72,13 +72,17 @@ public class List {
     /**
      * Constructs the object.
      */
+    /**
+     * @variable TEN.
+     */
+    private static final int TEN = 10;
     public List() {
 
         // what are the two variables to be initialized here? think about the
         // private variables described above. What should be the default values?
         // In the case of the list, it should be empty but it should be
         // initialized with an array size like 10
-        list = new int[10];
+        list = new int[TEN];
         // Think about the initial value for size.
         // How many items do we have in the list when you create it?
         // An empty list has how many items?
