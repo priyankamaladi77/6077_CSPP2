@@ -34,7 +34,7 @@ public class List {
     // don't create the array yet using new
     // that's the job of the List constructor
     /**
-    * private list
+    * private list...
     */
     private int[] list;
     /*
@@ -69,7 +69,6 @@ public class List {
      * The purpose of the constructor is to initialize the class variables with
      * some default values.
      */
-    
     /**
      * Constructs the object.
      */
