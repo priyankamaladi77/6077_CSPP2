@@ -13,7 +13,7 @@ class Student {
      */
     public Student(final String name1) {
     //A constructor used to initialize the instance variables
-		this.name1 = name;
+		this.name = name1;
 	}
 
 	/**
