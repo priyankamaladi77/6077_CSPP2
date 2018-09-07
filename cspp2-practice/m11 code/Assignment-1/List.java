@@ -268,7 +268,6 @@ public class List {
     and also if start is greater than end.
     @param      start  The start
     @param      end    The end
-    
     @return     { description_of_the_return_value }
     */
     public List subList(final int start, final int end) {
@@ -290,9 +289,7 @@ public class List {
     /**
     Returns a boolean indicating whether the parameter i.e a List object is.
     exactly matching with the given list or not.
-    
     @param      list  The list
-    
     @return     { description_of_the_return_value }
     */
     public boolean equals(final List list) {
