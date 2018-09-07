@@ -286,7 +286,7 @@ public class List<E> {
             System.out.println("Index Out of Bounds Exception");
             return null;
         }
-        if (start <= 0 || end < 0 || start > size || end > size) {
+        if (start < 0 || end < 0 || start > size || end > size) {
             System.out.println("Index Out of Bounds Exception");
             return null;
         }
