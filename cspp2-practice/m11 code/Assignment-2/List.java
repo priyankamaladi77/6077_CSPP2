@@ -220,7 +220,7 @@ public class List<E> {
      *
      * @return     { description_of_the_return_value }
      */
-    public boolean contains(final E item) {
+    public boolean contains(E item) {
         // Replace the code below
         return indexOf(item) >= 0;
     }
@@ -235,7 +235,7 @@ public class List<E> {
     public int indexOf(final E item) {
         // Replace the code below
          for (int i = 0; i < size; i++) {
-            if (item == list[i]) {
+            if (list[i].equals(item)) {
                 return i;
             }
         }
