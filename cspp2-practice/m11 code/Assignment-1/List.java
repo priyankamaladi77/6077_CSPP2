@@ -299,9 +299,9 @@ public class List {
     @param      list  The list
     @return     { description_of_the_return_value }
     */
-    public boolean equals(final List list) {
+    public boolean equals(final List list1) {
     // Replace the code
-        return list.toString().equals(this.toString());
+        return list1.toString().equals(this.toString());
     }
     /**
      * Removes all the elements from list Think abou
@@ -393,7 +393,7 @@ public class List {
                         l.removeAll(a);
                     }
                 break;
-                case "subList": {
+                case "subList":
                     if (tokens.length != 2) {
                         break;
                     }
@@ -404,7 +404,6 @@ public class List {
                         System.out.println(object);
                     }
                     break;
-                }
                 case "equals":
                     if (tokens.length == 2) {
                         String[] lt = tokens[1].split(",");
