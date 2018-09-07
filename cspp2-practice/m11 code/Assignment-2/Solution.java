@@ -9,7 +9,7 @@ import java.util.Scanner;
  */
 class Student {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private String name;
 
@@ -18,7 +18,7 @@ class Student {
      *
      * @param      name1  The name 1
      */
-    public Student(final String name1) {
+    Student(final String name1) {
     //A constructor used to initialize the instance variables
         this.name = name1;
     }
@@ -32,7 +32,14 @@ class Student {
     //Getter method which returns the value of instance variable
         return this.name;
     }
-
+    /**
+     * { function_description }.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int hashCode() {
+        return 0;
+    }
     @Override
     public boolean equals(final Object other) {
         if (!(other instanceof Student)) {
