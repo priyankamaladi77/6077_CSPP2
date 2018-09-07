@@ -8,6 +8,9 @@ import java.util.Scanner;
  * Class for student.
  */
 class Student {
+    /*
+    * private variable..
+    */
     private String name;
 
     /**
@@ -31,7 +34,7 @@ class Student {
     }
 
     @Override
-    public boolean equals(final Object other) { 
+    public boolean equals(final Object other) {
         if (!(other instanceof Student)) {
             return false;
         }
@@ -53,7 +56,7 @@ class Student {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Empty constructor.
      */
@@ -95,8 +98,8 @@ public class Solution {
                 break;
                 case "indexOf":
                     if (tokens.length == 2) {
-                        System.out.println(l.indexOf
-                            (Integer.parseInt(tokens[1])));
+                        System.out.println(l.indexOf(
+                            Integer.parseInt(tokens[1])));
                     }
                 break;
                 case "get":
@@ -106,8 +109,8 @@ public class Solution {
                 break;
                 case "contains":
                     if (tokens.length == 2) {
-                        System.out.println(l.contains
-                            (Integer.parseInt(tokens[1])));
+                        System.out.println(l.contains(
+                            Integer.parseInt(tokens[1])));
                     }
                 break;
                 case "addAll":
@@ -194,8 +197,8 @@ public class Solution {
                 break;
                 case "indexOf":
                     if (tokens.length == 2) {
-                        System.out.println(l.indexOf
-                            (Double.parseDouble(tokens[1])));
+                        System.out.println(l.indexOf(
+                            Double.parseDouble(tokens[1])));
                     }
                 break;
                 case "get":
@@ -205,8 +208,8 @@ public class Solution {
                 break;
                 case "contains":
                     if (tokens.length == 2) {
-                        System.out.println(l.contains
-                            (Double.parseDouble(tokens[1])));
+                        System.out.println(l.contains(
+                            Double.parseDouble(tokens[1])));
                     }
                 break;
                 case "addAll":
@@ -293,8 +296,8 @@ public class Solution {
                 break;
                 case "indexOf":
                     if (tokens.length == 2) {
-                        System.out.println(l.indexOf
-                            (Float.parseFloat(tokens[1])));
+                        System.out.println(l.indexOf(
+                            Float.parseFloat(tokens[1])));
                     }
                 break;
                 case "get":
@@ -304,8 +307,8 @@ public class Solution {
                 break;
                 case "contains":
                     if (tokens.length == 2) {
-                        System.out.println(l.contains
-                            (Float.parseFloat(tokens[1])));
+                        System.out.println(l.contains(
+                            Float.parseFloat(tokens[1])));
                     }
                 break;
                 case "addAll":
