@@ -8,9 +8,9 @@ import java.util.Scanner;
  * Class for student.
  */
 class Student {
-    /*
-    * private variable..
-    */
+    /**
+     * { var_description }
+     */
     private String name;
 
     /**
