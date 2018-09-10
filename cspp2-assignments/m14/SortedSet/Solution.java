@@ -5,101 +5,102 @@ import java.util.Arrays;
  * Class for soretd set.
  */
 class SortedSet extends Set {
-	/**
-	 * sort method.
-	 *
-	 * @param      array  The array
-	 */
-	public void sort(final int[] array) {
-		int temp;
-		for (int i = 0; i < size; i++) {
-			for (int j = i + 1; j < size; j++) {
-				if (array[i] > array[j]) {
-					temp = array[i];
-					array[i] = array[j];
-					array[j] = temp;
-				}
-			}
-		}	
-	}
-	/**
-	 * add method.
-	 *
-	 * @param      item  The item
-	 */
-	public void add(final int item) {
-		if (!contains(item)) {
-			set[size++] = item;
-		}
-		sort(set);
-	}
-	/**
-	 * subset method.
-	 *
-	 * @param      fromElement  The from element
-	 * @param      toElement    To element
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public int[] subSet(final int fromElement, final int toElement) {
-		if (fromElement > toElement) {
-			System.out.println("Invalid Arguments to Subset Exception");
-			return null;
-		}
-		int[] result = new int[size];
-		int k = 0;
-		for (int i = 0; i < size; i++) {
-			if (set[i] >= fromElement) {
-				for (int j = i; j < size; j++) {
-					if (set[j] < toElement) {
-						result[k++] = set[i];
-					}
-					break;
-				}
-			}
-		}
-		return Arrays.copyOf(result, k);
-	}
-	/**
-	 * headset method.
-	 *
-	 * @param      toELement  To e lement
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public int[] headSet(final int toElement) {
-		int[] result = new int[size];
-		int tmp = 0;
-		for (int i = 0; i < size; i++) {
-			if (set[i] < toElement) {
-				result[i] = set[i];
-				tmp++;
-			}
-		}
-		return Arrays.copyOf(result, tmp);
-	}
-	/**
-	 * last method.
-	 *
-	 * @return     { description_of_the_return_value }
-	 */
-	public int last() {
-		if (size == 0) {
-			System.out.println("Set Empty Exception");
-			return -1;
-		}
-		return set[size - 1];
-	}
-	/**
-	 * Adds all.
-	 *
-	 * @param      ele   The ele
-	 */
-	public void addAll(final int[] ele) {
-		for (int i : ele) {
-			this.add(i);
-		}
-	}
+    /**
+     * sort method.
+     *
+     * @param      array  The array
+     */
+    public void sort(final int[] array) {
+        int temp;
+        for (int i = 0; i < size; i++) {
+            for (int j = i + 1; j < size; j++) {
+                if (array[i] > array[j]) {
+                    temp = array[i];
+                    array[i] = array[j];
+                    array[j] = temp;
+                }
+            }
+        }
+    }
+    /**
+     * add method.
+     *
+     * @param      item  The item
+     */
+    public void add(final int item) {
+        if (!contains(item)) {
+            set[size++] = item;
+        }
+        sort(set);
+    }
+    /**
+     * subset method.
+     *
+     * @param      fromElement  The from element
+     * @param      toElement    To element
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int[] subSet(final int fromElement, final int toElement) {
+        if (fromElement > toElement) {
+            System.out.println
+            ("Invalid Arguments to Subset Exception");
+            return null;
+        }
+        int[] result = new int[size];
+        int k = 0;
+        for (int i = 0; i < size; i++) {
+            if (set[i] >= fromElement) {
+                for (int j = i; j < size; j++) {
+                    if (set[j] < toElement) {
+                        result[k++] = set[i];
+                    }
+                    break;
+                }
+            }
+        }
+        return Arrays.copyOf(result, k);
+    }
+    /**
+     * headset method.
+     *
+     * @param      toElement  To e lement
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int[] headSet(final int toElement) {
+        int[] result = new int[size];
+        int tmp = 0;
+        for (int i = 0; i < size; i++) {
+            if (set[i] < toElement) {
+                result[i] = set[i];
+                tmp++;
+            }
+        }
+        return Arrays.copyOf(result, tmp);
+    }
+    /**
+     * last method.
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int last() {
+        if (size == 0) {
+            System.out.println("Set Empty Exception");
+            return -1;
+        }
+        return set[size - 1];
+    }
+    /**
+     * Adds all.
+     *
+     * @param      ele   The ele
+     */
+    public void addAll(final int[] ele) {
+        for (int i : ele) {
+            this.add(i);
+        }
+    }
 }
 /**
  * Solution class.
