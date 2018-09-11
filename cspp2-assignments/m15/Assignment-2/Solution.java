@@ -9,11 +9,22 @@ class InvalidSubsetSelectionException extends Exception {
         super(s);
     }
 }
+/**
+ * Exception for signaling set empty errors.
+ */
 class  SetEmptyException extends Exception {
+    /**
+     * Constructs the object.
+     *
+     * @param      s     { parameter_description }
+     */
     SetEmptyException(final String s) {
         super(s);
     }
 }
+/**
+ * Class for sorted set.
+ */
 class SortedSet extends Set {
     /**
      * sort method.
@@ -46,14 +57,18 @@ class SortedSet extends Set {
     /**
      * subset method.
      *
-     * @param      fromElement  The from element
-     * @param      toElement    To element
+     * @param      fromElement                      The from element
+     * @param      toElement                        To element
      *
      * @return     { description_of_the_return_value }
+     *
+     * @throws     InvalidSubsetSelectionException  { exception_description }
      */
-    public int[] subSet(final int fromElement, final int toElement) throws InvalidSubsetSelectionException{
+    public int[] subSet(final int fromElement, final int toElement)
+    throws InvalidSubsetSelectionException {
         if (fromElement > toElement) {
-            throw new InvalidSubsetSelectionException("Invalid Arguments to Subset Exception");
+            throw new 
+            InvalidSubsetSelectionException("Invalid Arguments to Subset Exception");
             //return null;
         }
         int[] result = new int[size];
@@ -73,11 +88,13 @@ class SortedSet extends Set {
     /**
      * headset method.
      *
-     * @param      toElement  To e lement
+     * @param      toElement          To e lement
      *
      * @return     { description_of_the_return_value }
+     *
+     * @throws     SetEmptyException  { exception_description }
      */
-    public int[] headSet(final int toElement) throws SetEmptyException{
+    public int[] headSet(final int toElement) throws SetEmptyException {
         int[] result = new int[size];
         int tmp = 0;
         for (int i = 0; i < size; i++) {
@@ -95,8 +112,10 @@ class SortedSet extends Set {
      * last method.
      *
      * @return     { description_of_the_return_value }
+     *
+     * @throws     SetEmptyException  { exception_description }
      */
-    public int last() throws  SetEmptyException{
+    public int last() throws  SetEmptyException {
         if (size == 0) {
             throw new SetEmptyException("Set Empty Exception");
             //return -1;
