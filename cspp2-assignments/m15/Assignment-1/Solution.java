@@ -237,14 +237,13 @@ public class Solution {
         //int[] list = new int[end - start];
         Solution newlist = new Solution();
         if ((start == end) && (start <= 0 && end <= 0)) {
-            throw new IndexOutofBoundsException
-            ("Index Out of Bounds Exception");
-        }if (start == end) {
-            return newlist;
-        } else if ((start < 0 || end < 0) || (start > size || end > size)){
             throw new IndexOutofBoundsException("Index Out of Bounds Exception");
-        } else if ((start >= 0 && start < end) &&
-            (end > 0 && end > start && end < list.length)) {
+        } 
+        if (start == end) {
+            return newlist;
+        } else if ((start < 0 || end < 0) || (start > size || end > size)) {
+            throw new IndexOutofBoundsException("Index Out of Bounds Exception");
+        } else if ((start >= 0 && start < end) && (end > 0 && end > start && end < list.length)) {
             int k = 0;
             for (k = start; k < end; k++) {
                 newlist.add(list[k]);
@@ -295,8 +294,7 @@ public class Solution {
                         String[] t = tokens[1].split(",");
                         if (t.length == 1) {
                             l.add(Integer.parseInt(tokens[1]));
-                        }
-                        else if (t.length == 2) {
+                        } else if (t.length == 2) {
                             l.add(Integer.parseInt(t[0]),
                                 Integer.parseInt(t[1]));
                         }
@@ -315,7 +313,7 @@ public class Solution {
                     }
                 } catch (Exception e) {
                             System.out.println(e.getMessage());
-                        }   
+                        }
                 break;
                 case "indexOf":
                     if (tokens.length == 2) {
