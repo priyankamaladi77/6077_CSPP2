@@ -111,25 +111,21 @@ public class Solution {
     }
 
     public void removeAll(final int[] newArray) {
-        boolean check;
-        for (int i = 0; i < newArray.length; i++) {
-            check = contains(newArray[i]);
-            if (check) {
-                for (int j = 0; j < size; j++) {
-                    if (list[j] == newArray[i]) {
-                        try {
-                        	remove(list[j]);
-                        } catch (Exception e) {
+        if (newArray.length < list.length) {
+            for (int i = 0; i < newArray.length; i++) {
+            int index = indexOf(newArray[i]);
+            while (index != -1) {
+            	try {
+            		remove(index);
+                index = indexOf(newArray[i]);
+            } catch (Exception e) {
                         	System.out.println(e.getMessage());
-                        }
-                        j--;
-                    }
-                }
-            }
-        }
-     }
-
-     public Solution subList(int start, int end)  throws IndexOutofBoundsException {
+                        }		
+   					}
+        		}
+    		}
+    	}
+    public Solution subList(int start, int end) throws IndexOutofBoundsException {
     	//int[] list = new int[end - start];
     	Solution newlist = new Solution();
     	if ((start == end) && (start <= 0 && end <= 0)) {
