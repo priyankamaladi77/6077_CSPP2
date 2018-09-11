@@ -132,7 +132,7 @@ public class Solution {
      public Solution subList(int start, int end)  throws IndexOutofBoundsException {
     	//int[] list = new int[end - start];
     	Solution newlist = new Solution();
-    	if ((start == end) && (start < 0 && end < 0)) {
+    	if ((start == end) && (start <= 0 && end <= 0)) {
     		throw new IndexOutofBoundsException("Index Out of Bounds Exception");
     	} if (start == end) {
     		return newlist;
