@@ -127,14 +127,14 @@ public class Solution {
      }
 
      public Solution subList(int start, int end)  throws IndexOutofBoundsException {
-    	int[] list = new int[end - start];
+    	//int[] list = new int[end - start];
     	Solution newlist = new Solution();
     	if ((start == end) && (start < 0 && end < 0)) {
     		throw new IndexOutofBoundsException("Index Out of Bounds Exception");
     	} if (start == end) {
     		return newlist;
-    	} else if ((start < 0 && end < 0) || (start > size || end >= size)){
-    		throw new IndexOutofBoundsException(" hi Index Out of Bounds Exception");
+    	} else if ((start < 0 && end < 0) || (start > size || end > size)){
+    		throw new IndexOutofBoundsException("Index Out of Bounds Exception");
     	} else if ((start >= 0 && start < end) && (end > 0 && end > start && end < list.length)) {
     		int k = 0;
     		for (k = start; k < end; k++) {
