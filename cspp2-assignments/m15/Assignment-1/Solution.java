@@ -12,7 +12,7 @@ class InvalidPositionException extends Exception {
      *
      * @param      s     { parameter_description }
      */
-    InvalidPositionException(String s) {
+    InvalidPositionException(final String s) {
         super(s);
     }
 }
@@ -25,7 +25,7 @@ class IndexOutofBoundsException extends Exception {
      *
      * @param      s     { parameter_description }
      */
-    IndexOutofBoundsException(String s) {
+    IndexOutofBoundsException(final String s) {
         super(s);
     }
 }
@@ -34,18 +34,17 @@ class IndexOutofBoundsException extends Exception {
  */
 public class Solution {
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int[] list;
     /**
-     * { var_description }
+     * { var_description }.
      */
     private int size;
     /**
       * @variable TEN.
       */
     private static final int TEN = 10;
-    
     /**
      * Constructs the object.
      */
@@ -240,8 +239,7 @@ public class Solution {
         if ((start == end) && (start <= 0 && end <= 0)) {
             throw new IndexOutofBoundsException
             ("Index Out of Bounds Exception");
-        }
-        if (start == end) {
+        }if (start == end) {
             return newlist;
         } else if ((start < 0 || end < 0) || (start > size || end > size)){
             throw new IndexOutofBoundsException("Index Out of Bounds Exception");
