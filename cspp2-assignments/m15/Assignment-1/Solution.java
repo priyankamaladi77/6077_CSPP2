@@ -26,6 +26,9 @@ public class Solution {
 	}
 
 	public void add(int item) {
+		if(size > list.length) {
+			resize();
+		}
 		list[size++] = item;
 	}
 
