@@ -1,3 +1,6 @@
+/**
+ * @author Priyanka Maladi.
+ */
 import java.io.BufferedInputStream;
 import java.util.Scanner;
 import java.util.Arrays;
@@ -5,6 +8,11 @@ import java.util.Arrays;
  * Class for soretd set.
  */
 class InvalidSubsetSelectionException extends Exception {
+    /**
+     * Constructs the object.
+     *
+     * @param      s     { parameter_description }
+     */
     InvalidSubsetSelectionException(final String s) {
         super(s);
     }
