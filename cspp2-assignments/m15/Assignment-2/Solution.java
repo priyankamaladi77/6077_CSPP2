@@ -70,13 +70,13 @@ class SortedSet extends Set {
      *
      * @return     { description_of_the_return_value }
      *
-     * @throws     InvalidSubsetSelectionException  { exception_description }
+     * @throws     Exception  { exception_description }
      */
     public int[] subSet(final int fromElement, final int toElement)
-    throws InvalidSubsetSelectionException {
+    throws Exception {
         if (fromElement > toElement) {
             throw new
-            InvalidSubsetSelectionException("Invalid Arguments to Subset Exception");
+            Exception("Invalid Arguments to Subset Exception");
             //return null;
         }
         int[] result = new int[size];
