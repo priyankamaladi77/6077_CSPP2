@@ -112,10 +112,10 @@ public class Solution {
         for (int i = 0; i < newArray.length; i++) {
             check = contains(newArray[i]);
             if (check) {
-                for (int j = 0; j < list.length; j++) {
+                for (int j = 0; j < size; j++) {
                     if (list[j] == newArray[i]) {
                         try {
-                        	remove(list[j]);
+                        	remove(j);
                         } catch (Exception e) {
                         	System.out.println(e.getMessage());
                         }
