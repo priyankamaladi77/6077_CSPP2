@@ -144,14 +144,9 @@ public class Solution {
     	return newlist;
     }
 
-    public boolean equals(Solution list) {
-    	int j = 0;
-    	for (int i = 0; i < list.size; i++) {
-    		if (contains(list.get(j))) {
-    			j++;
-    		}
-    	}
-    	return (j == list.size);
+    public boolean equals(final Solution list1) {
+    // Replace the code
+        return list1.toString().equals(this.toString());
     }
 
     public void clear() {
