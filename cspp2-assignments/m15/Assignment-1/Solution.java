@@ -7,6 +7,11 @@ import java.util.Arrays;
  * @author    Priyanka Maladi.
  */
 class InvalidPositionException extends Exception {
+    /**
+     * Constructs the object.
+     *
+     * @param      s     { parameter_description }
+     */
     InvalidPositionException(String s) {
         super(s);
     }
@@ -15,6 +20,11 @@ class InvalidPositionException extends Exception {
  * Exception for signaling index outof bounds errors.
  */
 class IndexOutofBoundsException extends Exception {
+    /**
+     * Constructs the object.
+     *
+     * @param      s     { parameter_description }
+     */
     IndexOutofBoundsException(String s) {
         super(s);
     }
