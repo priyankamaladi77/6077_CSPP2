@@ -141,7 +141,7 @@ public class Solution {
     			newlist.add(list[k]);
     		}
     	}
-    	return new Solution();
+    	return newlist;
     }
 
     public boolean equals(Solution list) {
