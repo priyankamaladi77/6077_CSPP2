@@ -115,7 +115,7 @@ public class Solution {
                 for (int j = 0; j < list.length; j++) {
                     if (list[j] == newArray[i]) {
                         try {
-                        	remove(j);
+                        	remove(list[j]);
                         } catch (Exception e) {
                         	System.out.println(e.getMessage());
                         }
