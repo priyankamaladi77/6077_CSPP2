@@ -133,9 +133,9 @@ public class Solution {
     		throw new IndexOutofBoundsException("Index Out of Bounds Exception");
     	} if (start == end) {
     		return newlist;
-    	} else if (start < 0 || end < 0 || start > list.length || end > list.length) {
+    	} else if (start < 0 && end < 0 || start > list.length || end > list.length) {
     		throw new IndexOutofBoundsException("Index Out of Bounds Exception");
-    	} else if ((start >= 0 && start <= end) && (end > 0 && end > start && end < list.length)) {
+    	} else if ((start >= 0 && start < end) && (end > 0 && end > start && end < list.length)) {
     		int k = 0;
     		for (k = start; k < end; k++) {
     			newlist.add(list[k]);
