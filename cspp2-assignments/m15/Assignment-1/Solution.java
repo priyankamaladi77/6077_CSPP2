@@ -91,7 +91,7 @@ public class Solution {
     }
 
     private void resize() {
-        list = Arrays.copyOf(list, 2 * size);
+        list = Arrays.copyOf(list, 2 * list.length);
     }
 
     public void add(int item, int index) {
