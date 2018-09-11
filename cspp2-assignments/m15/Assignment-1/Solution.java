@@ -145,13 +145,13 @@ public class Solution {
     }
 
     public boolean equals(Solution list) {
-    	int j = 0;
-    	for (int i = 0; i < list.size; i++) {
+    	int i = 0;
+    	for (i = 0; i < list.size; i++) {
     		if (contains(list.get(i))) {
-    			j++;
+    			i++;
     		}
     	}
-    	return (j == list.size);
+    	return (i == list.size);
     }
 
     public void clear() {
