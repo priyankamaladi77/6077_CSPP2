@@ -57,38 +57,74 @@ class Patron {
 	}
 }
 
+/**
+ * Class for book your show.
+ */
 class BookYourShow {
 	Show[] shows;
 	Patron[] patrons;
+	/**
+	 * showsize description.
+	 */
 	private int showsize;
+	/**
+	 * patronsize description.
+	 */
 	private int patronsize;
 
-	public BookYourShow() {
+	/**
+	 * Constructs the object.
+	 */
+	BookYourShow() {
 		shows = new Show[10];
 		patrons = new Patron[10];
 		showsize = 0;
 		patronsize = 0;
 	}
+	/**
+	 * showresize method.
+	 */
 	public void showresize() {
         shows = Arrays.copyOf(shows, shows.length * 2);
     }
+    /**
+     * patronresize method.
+     */
     public void patronresize() {
         patrons = Arrays.copyOf(patrons, patrons.length * 2);
     }
-	public void addAShow(Show n_show) {
+	/**
+	 * Adds a show.
+	 *
+	 * @param      nshow  The nshow
+	 */
+	public void addAShow(final Show nshow) {
 		if (showsize == shows.length) {
 			showresize();
 		}
-		shows[showsize++] = n_show;
+		shows[showsize++] = nshow;
 	}
 
-	public void addAPatron(Patron n_patron) {
+	/**
+	 * Adds a patron.
+	 *
+	 * @param      n_patron  The n patron
+	 */
+	public void addAPatron(final Patron npatron) {
 		if (patronsize == patrons.length) {
 			patronresize();
 		}
-		patrons[patronsize++] = n_patron;
+		patrons[patronsize++] = npatron;
 	}
-	public Show getAShow(String moviename, String showdate) {
+	/**
+	 * Gets a show.
+	 *
+	 * @param      moviename  The moviename
+	 * @param      showdate   The showdate
+	 *
+	 * @return     A show.
+	 */
+	public Show getAShow(final String moviename, final String showdate) {
 		for (int i = 0; i < showsize; i++) {
 			if (shows[i].getMoviename().equals(moviename)
 				&& shows[i].getShowdate().equals(showdate)) {
@@ -97,7 +133,14 @@ class BookYourShow {
 		}
 		return null;
 	}
-	public void bookAShow(String moviename, String showdate, Patron p) {
+	/**
+	 * bookAShow method.
+	 *
+	 * @param      moviename  The moviename
+	 * @param      showdate   The showdate
+	 * @param      p          { parameter_description }
+	 */
+	public void bookAShow(final String moviename, final String showdate, final Patron p) {
 		addAPatron(p);
 		Show availableshow = getAShow(moviename, showdate);
 		if (availableshow != null) {
@@ -105,36 +148,55 @@ class BookYourShow {
 			String[] bookedseats = p.getBookedseats();
 			for (int i = 0; i < seats.length; i++) {
 				for (int j = 0; j < bookedseats.length; j++) {
-					if (seats[i].equals(bookedseats[j]) && !seats[i].equals("N/A")) {
+					if (seats[i].equals(bookedseats[j])
+						&& !seats[i].equals("N/A")) {
 						seats[i] = "N/A";
 					}
-				}	
+				}
 			}
 		} else {
 			System.out.println("No show");
 		}
 	}
-	public String printTickets(String moviename, String showdate, String mobilenum) {
+	/**
+	 * printTickets method.
+	 *
+	 * @param      moviename  The moviename
+	 * @param      showdate   The showdate
+	 * @param      mobilenum  The mobilenum
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
+	public String printTickets(final String moviename,
+		final String showdate, final String mobilenum) {
 		Show show = getAShow(moviename, showdate);
 		String str = "Invalid";
 		if (show != null) {
 			str = "No show";
 			for (int j = 0; j < patronsize; j++) {
 				str = "Invalid";
-				if (patrons[j].getMobilenum().equals(mobilenum)) {
-					str = mobilenum + " " + moviename + " " + showdate;
+				if (patrons[j].getMobilenum().
+					equals(mobilenum)) {
+					str = mobilenum + " " +
+					moviename + " " + showdate;
 					return str;
 				}
 			}
 		}
 		return str;
 	}
+	/**
+	 * Shows all method.
+	 */
 	public void showAll() {
 		for (int i = 0; i < showsize; i++) {
 			System.out.println(shows[i]);
 		}
 	}
 }
+/**
+ * class Solution.
+ */
 public final class Solution {
     /**
      * Constructs the object.
@@ -185,7 +247,8 @@ public final class Solution {
                 break;
 
                 case "print":
-                System.out.println(bys.printTickets(check[1], tokens[1], tokens[2]));
+                System.out.println(bys.printTickets
+                	(check[1], tokens[1], tokens[2]));
                 break;
 
                 case "showAll":
