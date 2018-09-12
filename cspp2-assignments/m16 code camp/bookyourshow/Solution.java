@@ -27,7 +27,7 @@ class Show {
 	public String toString() {
 		String s = "";
 		s += moviename + "," + showdate + ",";
-		s += Arrays.toString(seats).replace(",",",");
+		s += Arrays.toString(seats).replace(", ",",");
 		return s;
 	}
 }
