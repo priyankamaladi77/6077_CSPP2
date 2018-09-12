@@ -114,19 +114,17 @@ class BookYourShow {
 			System.out.println("No show");
 		}
 	}
-	public String printTickets(String moviename, String showdate, String mobilenum) {
+	public void printTickets(String moviename, String showdate, String mobilenum) {
 		Show show = getAShow(moviename, showdate);
-		String str = "No Show";
 		if (show != null) {
 			for (int j = 0; j < patronsize; j++) {
-				str = "Invalid";
 				if (patrons[j].getMobilenum().equals(mobilenum)) {
-					str += mobilenum + " " + moviename + " " + showdate;
-					return str;
+					System.out.println(mobilenum + " " + moviename + " " + showdate);
 				}
 			}
+		} else {
+			System.out.println("No show");
 		}
-		return str;
 	}
 	public void showAll() {
 		for (int i = 0; i < showsize; i++) {
