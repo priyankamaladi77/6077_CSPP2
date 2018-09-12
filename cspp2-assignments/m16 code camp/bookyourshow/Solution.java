@@ -1,56 +1,143 @@
+/**
+ * @author Priyanka maladi.
+ */
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for show.
+ */
 class Show {
+	/**
+	 * moviename description.
+	 */
 	private String moviename;
+	/**
+	 * showdate description.
+	 */
 	private String showdate;
+	/**
+	 * seats description.
+	 */
 	private String[] seats;
 
-	public Show (String mvenam, String showdat, String[] seats1) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      mvenam   The mvenam
+	 * @param      showdat  The showdat
+	 * @param      seats1   The seats 1
+	 */
+	Show(final String mvenam, final String showdat, final String[] seats1) {
 		this.moviename = mvenam;
 		this.showdate = showdat;
 		this.seats = seats1;
 	}
+	/**
+	 * Gets the moviename.
+	 *
+	 * @return     The moviename.
+	 */
 	public String getMoviename() {
 		return this.moviename;
 	}
+	/**
+	 * Gets the showdate.
+	 *
+	 * @return     The showdate.
+	 */
 	public String getShowdate() {
 		return this.showdate;
 	}
+	/**
+	 * Gets the seats.
+	 *
+	 * @return     The seats.
+	 */
 	public String[] getSeats() {
 		return this.seats;
 	}
+	/**
+	 * printExceptTickets method.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public String printExceptTickets() {
 		String s = "";
 		s += moviename + "," + showdate;
 		return s;
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		String s = "";
 		s += moviename + "," + showdate + ",";
-		s += Arrays.toString(seats).replace(", ",",");
+		s += Arrays.toString(seats).replace(", ", ",");
 		return s;
 	}
 }
 
+/**
+ * Class for patron.
+ */
 class Patron {
+	/**
+	 * patronname description.
+	 */
 	private String patronname;
+	/**
+	 * mobilenum description.
+	 */
 	private String mobilenum;
+	/**
+	 * bookedseats description.
+	 */
 	private String[] bookedseats;
 
-	public Patron (String name, String phnnum, String[] booked) {
+	/**
+	 * Constructs the object.
+	 *
+	 * @param      name    The name
+	 * @param      phnnum  The phnnum
+	 * @param      booked  The booked
+	 */
+	public Patron (final String name,
+		final String phnnum, final String[] booked) {
 		this.patronname = name;
 		this.mobilenum = phnnum;
 		this.bookedseats = booked;
 	}
+	/**
+	 * Gets the patronname.
+	 *
+	 * @return     The patronname.
+	 */
 	public String getPatronname() {
 		return this.patronname;
 	}
+	/**
+	 * Gets the mobilenum.
+	 *
+	 * @return     The mobilenum.
+	 */
 	public String getMobilenum() {
 		return this.mobilenum;
 	}
+	/**
+	 * Gets the bookedseats.
+	 *
+	 * @return     The bookedseats.
+	 */
 	public String[] getBookedseats() {
 		return this.bookedseats;
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		String s = "";
 		return s;
@@ -61,8 +148,14 @@ class Patron {
  * Class for book your show.
  */
 class BookYourShow {
-	Show[] shows;
-	Patron[] patrons;
+	/**
+	 * shows array description.
+	 */
+	private Show[] shows;
+	/**
+	 * patron array description.
+	 */
+	private Patron[] patrons;
 	/**
 	 * showsize description.
 	 */
