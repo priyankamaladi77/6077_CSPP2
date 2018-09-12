@@ -172,6 +172,9 @@ class BookYourShow {
      * @variable TEN.
      */
     private static final int TEN = 10;
+    /**
+     * Constructs the object.
+     */
     BookYourShow() {
         shows = new Show[TEN];
         patrons = new Patron[TEN];
