@@ -114,17 +114,20 @@ class BookYourShow {
 			System.out.println("No show");
 		}
 	}
-	public void printTickets(String moviename, String showdate, String mobilenum) {
+	public String printTickets(String moviename, String showdate, String mobilenum) {
 		Show show = getAShow(moviename, showdate);
+		String str = "Invalid";
 		if (show != null) {
+			str = "No show";
 			for (int j = 0; j < patronsize; j++) {
+				str = "Invalid";
 				if (patrons[j].getMobilenum().equals(mobilenum)) {
-					System.out.println(mobilenum + " " + moviename + " " + showdate);
+					str = mobilenum + " " + moviename + " " + showdate;
+					return str;
 				}
 			}
-		} else {
-			System.out.println("No show");
 		}
+		return str;
 	}
 	public void showAll() {
 		for (int i = 0; i < showsize; i++) {
@@ -182,7 +185,7 @@ public final class Solution {
                 break;
 
                 case "print":
-                    bys.printTickets(check[1], tokens[1], tokens[2]);
+                System.out.println(bys.printTickets(check[1], tokens[1], tokens[2]));
                 break;
 
                 case "showAll":
