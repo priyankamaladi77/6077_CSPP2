@@ -108,7 +108,7 @@ class BookYourShow {
 	/**
 	 * Adds a patron.
 	 *
-	 * @param      n_patron  The n patron
+	 * @param      npatron  The n patron
 	 */
 	public void addAPatron(final Patron npatron) {
 		if (patronsize == patrons.length) {
@@ -140,7 +140,8 @@ class BookYourShow {
 	 * @param      showdate   The showdate
 	 * @param      p          { parameter_description }
 	 */
-	public void bookAShow(final String moviename, final String showdate, final Patron p) {
+	public void bookAShow(final String moviename,
+		final String showdate, final Patron p) {
 		addAPatron(p);
 		Show availableshow = getAShow(moviename, showdate);
 		if (availableshow != null) {
@@ -177,8 +178,8 @@ class BookYourShow {
 				str = "Invalid";
 				if (patrons[j].getMobilenum().
 					equals(mobilenum)) {
-					str = mobilenum + " " +
-					moviename + " " + showdate;
+					str = mobilenum + " "
+					+ moviename + " " + showdate;
 					return str;
 				}
 			}
@@ -247,8 +248,8 @@ public final class Solution {
                 break;
 
                 case "print":
-                System.out.println(bys.printTickets
-                	(check[1], tokens[1], tokens[2]));
+                System.out.println(bys.printTickets(
+                	check[1], tokens[1], tokens[2]));
                 break;
 
                 case "showAll":
