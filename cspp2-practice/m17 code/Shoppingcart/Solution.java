@@ -77,7 +77,7 @@ class Item {
      *
      * @param      prodtname  The prodtname
      *
-     * @return     { description_of_the_return_value }
+     *
      */
     public void setProductName(final String prodtname) {
         this.productname = prodtname;
@@ -88,7 +88,7 @@ class Item {
      *
      * @param      quanti  The quanti
      *
-     * @return     { description_of_the_return_value }
+     *
      */
     public void setQuantity(final int quanti) {
         this.quantity = quanti;
@@ -97,9 +97,9 @@ class Item {
     /**
      * Sets the unit price.
      *
-     * @param      giveprice  The giveprice
+     * @param      giveprice  The giveprice.
      *
-     * @return     { description_of_the_return_value }
+     *
      */
     public void setUnitPrice(final double giveprice) {
         this.unitprice = giveprice;
@@ -367,8 +367,8 @@ class ShoppingCart {
         System.out.println("Name   quantity   Price");
         for (int i = 0; i < cartsize; i++) {
             int p = indexOfCataItem(cart[i]);
-            System.out.println(cart[i].getProductName()
-                + " " + cart[i].getQuantity() + " " +
+            System.out.println(cart[i].getProductName() +
+                " " + cart[i].getQuantity() + " " +
                 cata[p].getUnitPrice());
         }
         System.out.println("Total:" + getTotalAmount());
@@ -380,15 +380,15 @@ class ShoppingCart {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
-    private Solution () {
+    private Solution() {
         // empty constructor.
     }
     /**
-     * { function_description }
+     * { function_description }.
      *
      * @param      args  The arguments
      */
