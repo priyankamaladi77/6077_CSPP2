@@ -348,7 +348,7 @@ class ShoppingCart {
 			int p = indexOfCataItem(cart[i]);
 			System.out.println(cart[i].getProductName() + " " + cart[i].getQuantity() + " " + cata[p].getUnitPrice());
 		}
-		System.out.println("Total:" + getTotalAmount());
+		System.out.println("Total: " + getTotalAmount());
 		System.out.println("Disc%:" + discount);
 		System.out.println("Tax:" + tax);
 		System.out.println("payable amount: " + getPayableAmount());
