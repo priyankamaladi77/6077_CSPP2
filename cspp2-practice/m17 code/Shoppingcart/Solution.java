@@ -261,11 +261,12 @@ class ShoppingCart {
 		int p = indexOfCartItem(item);
 		if (p != -1) {
 			if (cart[p].getQuantity() == item.getQuantity()) {
-				for (int i = 0; i < cartsize; i++) {
+				for (int i = p; i < cartsize; i++) {
 					cart[i] = cart[i+1];
 				}
 				cartsize -= 1;
 			} else if (cart[p].getQuantity() > item.getQuantity()) {
+
 				cart[p].setQuantity(cart[p].getQuantity() - (item.getQuantity()));
 			} else {
 				System.out.println("Not Applicable");
@@ -344,14 +345,15 @@ class ShoppingCart {
 	 * { function_description }
 	 */
 	public void printInvoice() {
+		System.out.println("Name   quantity   Price");
 		for (int i = 0; i < cartsize; i++) {
 			int p = indexOfCataItem(cart[i]);
 			System.out.println(cart[i].getProductName() + " " + cart[i].getQuantity() + " " + cata[p].getUnitPrice());
 		}
-		System.out.println("Total: " + getTotalAmount());
+		System.out.println("Total:" + getTotalAmount());
 		System.out.println("Disc%:" + discount);
 		System.out.println("Tax:" + tax);
-		System.out.println("payable amount: " + getPayableAmount());
+		System.out.println("Payable amount: " + getPayableAmount());
 	}
 }
 /**
