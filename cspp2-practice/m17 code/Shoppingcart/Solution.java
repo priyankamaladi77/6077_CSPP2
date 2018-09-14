@@ -199,7 +199,7 @@ class ShoppingCart {
 		if (catasize == cata.length) {
 			cataresize();
 		}
-		if (catasize == 0) {
+		if (catasize >= 0) {
 			cata[catasize] = items;
 			catasize += 1;
 		}
