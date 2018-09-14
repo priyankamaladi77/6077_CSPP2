@@ -200,7 +200,8 @@ class ShoppingCart {
 			cataresize();
 		}
 		if (catasize == 0) {
-			cata[catasize++] = items;
+			cata[catasize] = items;
+			catasize += 1;
 		}
 	}
 	/**
@@ -214,9 +215,10 @@ class ShoppingCart {
 		}
 		int index = indexOfCartItem(item);
 		if (index == -1) {
-			for (int i = 0; i < cata.length; i++) {
+			for (int i = 0; i < catasize; i++) {
 				if (cata[i].getProductName().equals(item.getProductName()) && (cata[i].getQuantity() >= item.getQuantity())) {
-					cart[cartsize++] = item;
+					cart[cartsize] = item;
+					cartsize += 1;
 				}
 			}
 		} else {
@@ -365,7 +367,7 @@ public class Solution {
 			switch (tokens[0]) {
 				case "Item":
 				String[] items = tokens[1].split(",");
-				cart.addToCatalog(new Item(items[0], Integer.parseInt(items[1]), Integer.parseInt(items[2])));
+				cart.addToCatalog(new Item(items[0], Integer.parseInt(items[1]), Double.parseDouble(items[2])));
 				break;
 				case "add":
 					items = tokens[1].split(",");
