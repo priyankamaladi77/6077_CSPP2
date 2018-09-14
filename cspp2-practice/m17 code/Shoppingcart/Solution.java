@@ -392,7 +392,7 @@ public class Solution {
 				case "coupon":
 					cart.isCoupon(tokens[1]);
 					break;
-				case "priint":
+				case "print":
 					cart.printInvoice();
 					break;
 				default:
