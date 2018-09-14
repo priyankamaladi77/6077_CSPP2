@@ -285,7 +285,7 @@ class ShoppingCart {
 	 */
 	public void showCatalog() {
 		for (int i = 0; i < catasize; i++) {
-			System.out.println(cata[i].getProductName() + " " + cata[i].getQuantity() + " " + cata[i].getUnitPrice());
+			System.out.println(cata[i]);
 		}
 	}
 	/**
