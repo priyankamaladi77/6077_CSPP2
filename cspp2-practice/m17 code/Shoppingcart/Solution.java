@@ -386,7 +386,7 @@ public class Solution {
 					System.out.println("totalAmount: " + cart.getTotalAmount());
 					break;
 				case "payableAmount":
-					System.out.println("payable amount: " + cart.getPayableAmount());
+					System.out.println("Payable amount: " + cart.getPayableAmount());
 					break;
 				case "catalog":
 					cart.showCatalog();
