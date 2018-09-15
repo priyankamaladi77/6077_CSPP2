@@ -1,5 +1,7 @@
+/**
+ * @author Priyanka maladi.
+ */
 import java.util.Scanner;
-
 /**
  * Solution class for code-eval.
  */
@@ -10,7 +12,7 @@ class Quiz {
     private String question;
 }
 /**
- * { item_description }
+ * { item_description }.
  */
 public final class Solution {
      /**
