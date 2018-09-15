@@ -35,7 +35,7 @@ public final class Solution {
                 System.out.println("|----------------|");
                 System.out.println("| Load Questions |");
                 System.out.println("|----------------|");
-                loadQuestions(s, q, Integer.parseInt(tokens[1]) ,Integer.parseInt(tokens[1]));
+                loadQuestions(s, q, Integer.parseInt(tokens[1]));
                 break;
                 case "START_QUIZ":
                 System.out.println("|------------|");
@@ -61,7 +61,7 @@ public final class Solution {
      * @param      quiz           The quiz object
      * @param      questionCount  The question count
      */
-    public static void loadQuestions(final Scanner s, final Quiz quiz, final int questionCount, final int choiceCount) {
+    public static void loadQuestions(final Scanner s, final Quiz quiz, final int questionCount) {
         // write your code here to read the questions from the console
         // tokenize the question line and create the question object
         // add the question objects to the quiz class
@@ -69,9 +69,6 @@ public final class Solution {
             System.out.println("Quiz does not have questions");
         } else {
             System.out.println("Error! Malformed question");
-        }
-        if (choiceCount < 2) {
-            System.out.println("<question text> does not have enough answer choices");
         }
     }
 
