@@ -4,6 +4,9 @@ import java.util.Scanner;
  * Solution class for code-eval.
  */
 class Quiz {
+    /**
+     * question.
+     */
     private String question;
 }
 public final class Solution {
