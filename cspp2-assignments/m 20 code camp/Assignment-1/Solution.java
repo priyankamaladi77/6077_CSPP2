@@ -201,7 +201,7 @@ class Quiz {
         				+ questions[i].getMaxMarks());
         			res = res + questions[i].getMaxMarks();
         		} else {
-        			System.out.println(" Wrong Answer! - penalty: "
+        			System.out.println(" Wrong Answer! - Penalty: "
         				+ questions[i].getPenalty());
         			res = res + questions[i].getPenalty();
         		}
