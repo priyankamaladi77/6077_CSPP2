@@ -61,9 +61,8 @@ class Question {
     public boolean evaluateResponse(final String choice) {
         if (choice.equals(choices[correctAnswer - 1])) {
         	return true;
-        } else {
-        	return false;
         }
+        return false;
     }
     /**
      * Gets the correct answer.
