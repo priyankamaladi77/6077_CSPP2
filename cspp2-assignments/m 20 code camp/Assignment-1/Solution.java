@@ -171,6 +171,9 @@ class Quiz {
     	}
     }
 
+    /**
+     * resize method.
+     */
     public void resize() {
     	questions = Arrays.copyOf(questions, size * 2);
     }
@@ -193,7 +196,7 @@ class Quiz {
         String s = "";
         int res = 0;
         if (size != 0) {
-        	for (int i =0; i < size; i++) {
+        	for (int i = 0; i < size; i++) {
         		System.out.println(questions[i].getQuestionText());
         		if (questions[i].evaluateResponse(questions[i].getResponse())) {
         			System.out.println(" Correct Answer! - Marks Awarded: "
