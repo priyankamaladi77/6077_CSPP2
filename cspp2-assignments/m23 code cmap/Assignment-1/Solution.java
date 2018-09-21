@@ -118,13 +118,13 @@ public class Solution {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
 		try {
-			String filename = s.nextLine();
-		File file = new File(filename);
+			String name = s.nextLine();
+		File file = new File(name);
 		File[] filelist = file.listFiles();
-		int length = filelist.length;
+		int len = filelist.length;
 		BagofWords f1 = new BagofWords();
-		double[][] res = new double[length][length];
-		for (int i = 0; i < length; i++) {
+		double[][] res = new double[len][len];
+		for (int i = 0; i < len; i++) {
 			BagofWords f = new BagofWords();
 			try {
 				s = new Scanner(filelist[i]);
@@ -134,7 +134,7 @@ public class Solution {
 			Info fi = new Info(s);
 			f.addTo(fi);
 			f.countofword(fi);
-			for (int j = 0; j < length; j++) {
+			for (int j = 0; j < len; j++) {
 				BagofWords f2 = new BagofWords();
 				try {
 					s = new Scanner(filelist[j]);
@@ -148,7 +148,7 @@ public class Solution {
 				res[i][j] = Math.round(f.frequencycount(f2));
 			}
 		}
-		for (int i = 0; i < length; i++) {
+		for (int i = 0; i < len; i++) {
 			System.out.println(Arrays.toString(res[i]));
 		}
 		} catch(Exception e) {
