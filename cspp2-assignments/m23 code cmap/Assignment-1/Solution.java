@@ -144,7 +144,7 @@ public class Solution {
 				Info fi1 = new Info(s);
 				f2.addTo(fi1);
 				f2.countofword(fi1);
-				System.out.println(i + "i" + filelist[i] + j + "j" + filelist[j]);
+				System.out.println(i + "i" + "\t" + filelist[i] + j + "j" + filelist[j]);
 				res[i][j] = Math.round(f.frequencycount(f2));
 			}
 		}
