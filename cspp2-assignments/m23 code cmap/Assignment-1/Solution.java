@@ -130,7 +130,7 @@ public class Solution {
 		System.out.println(f1.count());
 
 		BagofWords f2 = new BagofWords();
-		files = new File("File4.txt");
+		files = new File("File5.txt");
 		try {
 			s = new Scanner(files);
 		} catch (Exception e) {
