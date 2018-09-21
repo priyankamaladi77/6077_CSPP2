@@ -118,7 +118,7 @@ public class Solution {
 	public static void main(String[] args) {
 		BagofWords f1 = new BagofWords();
 		Scanner s = null;
-		File files = new File("Test");
+		File files = new File("File3.txt");
 		try {
 		s = new Scanner(files);
 		} catch (Exception e) {
@@ -128,9 +128,9 @@ public class Solution {
 		f1.addTo(f);
 		f1.countofword(f);
 		System.out.println(f1.count());
-		
+
 		BagofWords f2 = new BagofWords();
-		files = new File("Test2");
+		files = new File("File4.txt");
 		try {
 			s = new Scanner(files);
 		} catch (Exception e) {
