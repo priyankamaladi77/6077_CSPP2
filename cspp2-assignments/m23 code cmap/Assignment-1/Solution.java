@@ -116,29 +116,43 @@ class Info {
 
 public class Solution {
 	public static void main(String[] args) {
+		Scanner s = new Scanner(System.in);
+		try {
+			String filename = s.nextLine();
+		File file = new File(filename);
+		File[] filelist = file.listFiles();
+		int length = filelist.length;
 		BagofWords f1 = new BagofWords();
-		Scanner s = null;
-		File files = new File("File3.txt");
-		try {
-		s = new Scanner(files);
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
+		double[][] res = new double[length][length];
+		for (int i = 0; i < length; i++) {
+			BagofWords f = new BagofWords();
+			try {
+				s = new Scanner(filelist[i]);
+			} catch (Exception e) {
+				System.out.println(e.getMessage());
+			}
+			Info fi = new Info(s);
+			f.addTo(fi);
+			f.countofword(fi);
+			for (int j = 0; j < length; j++) {
+				BagofWords f2 = new BagofWords();
+				try {
+					s = new Scanner(filelist[j]);
+				} catch (Exception e) {
+					System.out.println(e.getMessage());
+				}
+				Info fi1 = new Info(s);
+				f2.addTo(fi1);
+				f2.countofword(fi1);
+				System.out.println(i + "i" + filelist[i] + j + "j" + filelist[j]);
+				res[i][j] = Math.round(f.frequencycount(f2));
+			}
 		}
-		Info f = new Info(s);
-		f1.addTo(f);
-		f1.countofword(f);
-		System.out.println(f1.count());
-
-		BagofWords f2 = new BagofWords();
-		files = new File("File5.txt");
-		try {
-			s = new Scanner(files);
-		} catch (Exception e) {
-			System.out.println(e.getMessage());
+		for (int i = 0; i < length; i++) {
+			System.out.println(Arrays.toString(res[i]));
 		}
-		Info fi = new Info(s);
-		f2.addTo(fi);
-		f2.countofword(fi);
-		System.out.println(f1.frequencycount(f2));
+		} catch(Exception e) {
+			System.out.println("empty directory");
+		}
 	}
 }
