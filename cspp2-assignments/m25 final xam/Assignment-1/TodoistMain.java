@@ -20,6 +20,7 @@ class Task {
 		this.important = imp;
 		this.urgent = ugent;
 		this.status = statu;
+
 		if (title == "") {
     		System.out.println("Title not provided");
     	if (timeToComplete < 0) {
@@ -28,7 +29,16 @@ class Task {
     	if (status != "todo" && status != "done") {
     		System.out.println("Invalid status" + " " + status);
     	}
+
     }
+	}
+
+	public String getImportant(final String important) {
+		if (this.important == true) {
+			return("Important");
+		} else {
+			return("Not Important");
+		}
 	}
 
 	public String toString() {
@@ -36,9 +46,7 @@ class Task {
 		str += title + ", " + assignedTo + ", " + timeToComplete + ", " + important + ", " + urgent + ", " + status;
 		return str;
 	}
-
 }
-
 class Todoist {
  	private Task[] tasks;
 
