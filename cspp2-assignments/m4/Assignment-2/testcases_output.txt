@@ -1,0 +1,66 @@
+########## Testcase 0: Failed ##########
+Expected Output: 
+2 2 3
+4 6 6
+7 8 10
+
+Your Output: 
+4	
+5	
+4	
+
+4	
+5	
+6	
+
+8	
+8	
+9
+----------------------------------------
+
+########## Testcase 1: Failed ##########
+Expected Output: 
+2 2 1
+4 6 1
+7 8 2
+
+Your Output: 
+4	
+5	
+2	
+
+4	
+5	
+1	
+
+8	
+8	
+1
+----------------------------------------
+
+########## Testcase 2: Failed ##########
+Expected Output: 
+not possible
+
+Your Output: 
+Exception in thread "main" java.util.NoSuchElementException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Solution.main(Solution.java:32)
+----------------------------------------
+
+########## Testcase 3: Failed ##########
+Expected Output: 
+not possible
+
+Your Output: 
+Exception in thread "main" java.util.NoSuchElementException
+	at java.base/java.util.Scanner.throwFor(Unknown Source)
+	at java.base/java.util.Scanner.next(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at java.base/java.util.Scanner.nextInt(Unknown Source)
+	at Solution.main(Solution.java:32)
+----------------------------------------
+

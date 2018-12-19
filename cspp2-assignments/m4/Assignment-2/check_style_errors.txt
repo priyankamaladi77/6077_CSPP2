@@ -1,0 +1,6 @@
+Starting audit...
+[ERROR] F:\msitp\CSPP_2\cspp2-assignments\m4\Assignment-2\Solution.java:22:12: 'int' is followed by whitespace. [NoWhitespaceAfter]
+[ERROR] F:\msitp\CSPP_2\cspp2-assignments\m4\Assignment-2\Solution.java:23:12: 'int' is followed by whitespace. [NoWhitespaceAfter]
+[ERROR] F:\msitp\CSPP_2\cspp2-assignments\m4\Assignment-2\Solution.java:24:12: 'int' is followed by whitespace. [NoWhitespaceAfter]
+Audit done.
+Checkstyle ends with 3 errors.
