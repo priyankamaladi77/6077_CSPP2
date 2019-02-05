@@ -1,60 +1,90 @@
 ************* Module Shopping
-Shopping.py:2:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:3:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:4:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:5:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:6:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:7:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:8:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:9:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:10:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:11:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:12:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:13:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:16:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:17:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:18:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:19:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:20:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:21:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:23:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:24:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:25:6: C0303: Trailing whitespace (trailing-whitespace)
+Shopping.py:25:8: C0303: Trailing whitespace (trailing-whitespace)
 Shopping.py:28:0: C0303: Trailing whitespace (trailing-whitespace)
-Shopping.py:29:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:30:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:31:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:33:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:34:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:36:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:37:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:38:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
-Shopping.py:42:0: C0304: Final newline missing (missing-final-newline)
-Shopping.py:42:0: W0312: Found indentation with tabs instead of spaces (mixed-indentation)
+Shopping.py:51:11: C0326: Exactly one space required after comma
+    for key,val in catalog.items():
+           ^ (bad-whitespace)
+Shopping.py:52:13: C0326: Exactly one space required after comma
+        for k,v in val.items():
+             ^ (bad-whitespace)
+Shopping.py:53:25: C0326: No space allowed before comma
+            print(key, k , float(v))
+                         ^ (bad-whitespace)
+Shopping.py:66:11: C0326: Exactly one space required after comma
+    for key,val in cart.items():
+           ^ (bad-whitespace)
+Shopping.py:73:13: C0303: Trailing whitespace (trailing-whitespace)
+Shopping.py:74:11: C0326: Exactly one space required after comma
+    for key,val in catalog.items():
+           ^ (bad-whitespace)
+Shopping.py:76:13: C0326: Exactly one space required after comma
+        for k,v in val.items():
+             ^ (bad-whitespace)
+Shopping.py:78:18: C0326: Exactly one space required after comma
+            for k1,v1 in cart.items():
+                  ^ (bad-whitespace)
+Shopping.py:91:28: C0326: Exactly one space required after comma
+    print("Payable amount: ",res)
+                            ^ (bad-whitespace)
+Shopping.py:99:11: C0326: Exactly one space required after comma
+    for key,val in dummy.items():
+           ^ (bad-whitespace)
+Shopping.py:108:0: C0303: Trailing whitespace (trailing-whitespace)
+Shopping.py:120:11: C0326: Exactly one space required after comma
+    for key,val in catalog.items():
+           ^ (bad-whitespace)
+Shopping.py:121:13: C0326: Exactly one space required after comma
+        for k,v in val.items():
+             ^ (bad-whitespace)
+Shopping.py:122:18: C0326: Exactly one space required after comma
+            for k1,v1 in cart.items():
+                  ^ (bad-whitespace)
+Shopping.py:128:16: C0326: Exactly one space required after comma
+    print("Tax:",tax)
+                ^ (bad-whitespace)
+Shopping.py:161:0: C0304: Final newline missing (missing-final-newline)
 Shopping.py:1:0: C0103: Module name "Shopping" doesn't conform to snake_case naming style (invalid-name)
 Shopping.py:1:0: C0111: Missing module docstring (missing-docstring)
-Shopping.py:1:0: C0111: Missing class docstring (missing-docstring)
-Shopping.py:6:1: C0103: Method name "getPname" doesn't conform to snake_case naming style (invalid-name)
-Shopping.py:6:1: C0111: Missing method docstring (missing-docstring)
-Shopping.py:8:1: C0103: Method name "getQuantity" doesn't conform to snake_case naming style (invalid-name)
-Shopping.py:8:1: C0111: Missing method docstring (missing-docstring)
-Shopping.py:10:1: C0103: Method name "getPrice" doesn't conform to snake_case naming style (invalid-name)
-Shopping.py:10:1: C0111: Missing method docstring (missing-docstring)
-Shopping.py:12:1: C0103: Method name "displayItem" doesn't conform to snake_case naming style (invalid-name)
-Shopping.py:12:1: C0111: Missing method docstring (missing-docstring)
-Shopping.py:15:0: C0111: Missing class docstring (missing-docstring)
-Shopping.py:20:1: C0103: Method name "addToCatalog" doesn't conform to snake_case naming style (invalid-name)
-Shopping.py:20:1: C0103: Argument name "Item" doesn't conform to snake_case naming style (invalid-name)
-Shopping.py:20:1: C0111: Missing method docstring (missing-docstring)
-Shopping.py:20:24: W0621: Redefining name 'Item' from outer scope (line 1) (redefined-outer-name)
-Shopping.py:23:1: C0103: Method name "removeFromcart" doesn't conform to snake_case naming style (invalid-name)
-Shopping.py:23:1: C0103: Argument name "Item" doesn't conform to snake_case naming style (invalid-name)
-Shopping.py:23:1: C0111: Missing method docstring (missing-docstring)
-Shopping.py:23:26: W0621: Redefining name 'Item' from outer scope (line 1) (redefined-outer-name)
-Shopping.py:27:0: C0111: Missing function docstring (missing-docstring)
-Shopping.py:29:1: C0103: Variable name "ip" doesn't conform to snake_case naming style (invalid-name)
-Shopping.py:30:5: W0612: Unused variable 'i' (unused-variable)
+Shopping.py:39:0: C0103: Constant name "catalog" doesn't conform to UPPER_CASE naming style (invalid-name)
+Shopping.py:39:0: W0604: Using the global statement at the module level (global-at-module-level)
+Shopping.py:40:0: C0103: Constant name "catalog" doesn't conform to UPPER_CASE naming style (invalid-name)
+Shopping.py:41:0: C0103: Constant name "cart" doesn't conform to UPPER_CASE naming style (invalid-name)
+Shopping.py:41:0: W0604: Using the global statement at the module level (global-at-module-level)
+Shopping.py:42:0: C0103: Constant name "cart" doesn't conform to UPPER_CASE naming style (invalid-name)
+Shopping.py:43:0: C0103: Function name "addCatalog" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:43:0: C0111: Missing function docstring (missing-docstring)
+Shopping.py:49:0: C0103: Function name "displayCatalog" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:49:0: C0111: Missing function docstring (missing-docstring)
+Shopping.py:52:14: C0103: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:55:0: C0103: Function name "addCart" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:55:0: C0111: Missing function docstring (missing-docstring)
+Shopping.py:65:0: C0103: Function name "displayCart" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:65:0: C0111: Missing function docstring (missing-docstring)
+Shopping.py:69:0: C0103: Function name "totalAmount" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:69:0: C0111: Missing function docstring (missing-docstring)
+Shopping.py:71:4: C0103: Constant name "amount" doesn't conform to UPPER_CASE naming style (invalid-name)
+Shopping.py:71:4: W0601: Global variable 'amount' undefined at the module level (global-variable-undefined)
+Shopping.py:76:14: C0103: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:78:16: C0103: Variable name "k1" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:78:19: C0103: Variable name "v1" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:76:12: W0612: Unused variable 'k' (unused-variable)
+Shopping.py:86:0: C0103: Function name "payableAmount" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:86:0: C0111: Missing function docstring (missing-docstring)
+Shopping.py:87:4: C0103: Constant name "res" doesn't conform to UPPER_CASE naming style (invalid-name)
+Shopping.py:87:4: W0601: Global variable 'res' undefined at the module level (global-variable-undefined)
+Shopping.py:88:4: C0103: Constant name "tax" doesn't conform to UPPER_CASE naming style (invalid-name)
+Shopping.py:88:4: W0601: Global variable 'tax' undefined at the module level (global-variable-undefined)
+Shopping.py:94:0: C0111: Missing function docstring (missing-docstring)
+Shopping.py:118:0: C0111: Missing function docstring (missing-docstring)
+Shopping.py:121:14: C0103: Variable name "v" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:122:16: C0103: Variable name "k1" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:122:19: C0103: Variable name "v1" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:121:12: W0612: Unused variable 'k' (unused-variable)
+Shopping.py:131:0: C0111: Missing function docstring (missing-docstring)
+Shopping.py:133:8: C0103: Variable name "x" doesn't conform to snake_case naming style (invalid-name)
+Shopping.py:153:12: E0602: Undefined variable 'discount' (undefined-variable)
+Shopping.py:133:8: W0612: Unused variable 'x' (unused-variable)
 
-------------------------------------
-Your code has been rated at -6.67/10
+-------------------------------------------------------------------
+Your code has been rated at 2.03/10 (previous run: -6.67/10, +8.69)
 
